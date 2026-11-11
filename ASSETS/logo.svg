@@ -1,0 +1,36 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>Hope Bridge Foundation logo</title>
+
+  <!-- Shield -->
+  <path d="M100 12 L172 42 V94
+           C172 140 142 171 100 190
+           C58 171 28 140 28 94 V42 Z"
+        fill="#12345A"/>
+
+  <!-- Inner shield -->
+  <path d="M100 27 L158 51 V94
+           C158 131 134 157 100 175
+           C66 157 42 131 42 94 V51 Z"
+        fill="none" stroke="#38B9A5" stroke-width="3"/>
+
+  <!-- Bridge deck -->
+  <path d="M53 111 H147"
+        stroke="#FFFFFF" stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Bridge arch -->
+  <path d="M61 111 Q100 55 139 111"
+        fill="none" stroke="#38B9A5"
+        stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Bridge supports -->
+  <path d="M72 111 V128 M128 111 V128"
+        stroke="#FFFFFF" stroke-width="5"
+        stroke-linecap="round"/>
+
+  <!-- Foundation beneath bridge -->
+  <path d="M61 132 H139"
+        stroke="#FFFFFF" stroke-width="5"
+        stroke-linecap="round"/>
+</svg>
