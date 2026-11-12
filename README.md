@@ -17,10 +17,12 @@ Visit the published website:
 - Custom SVG logo for Hope Bridge Foundation.
 - Responsive landing page.
 - Introduction to the phishing awareness programme.
-- Awareness Materials page explaining phishing and basic safety practices.
+- Phishing awareness article explaining common attacks and warning signs.
+- Interactive three-question quiz with score calculation.
+- Correct and incorrect answer feedback using JavaScript.
+- Responsive design for desktop and mobile devices.
 - Navigation between the website pages.
 - Published using GitHub Pages.
-
 ## Technologies Used
 
 - HTML5
@@ -38,7 +40,7 @@ hope-bridge-phishing-awareness/
 │   └── logo.svg
 │
 ├── index.html
-├── awareness-materials.html
+├── awareness.html
 ├── style.css
 └── README.md
 ```

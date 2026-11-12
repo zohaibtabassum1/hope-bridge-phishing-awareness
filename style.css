@@ -113,3 +113,129 @@ footer {
         font-size: 30px;
     }
 }
+
+
+/* QUIZ SECTION */
+
+.quiz-section {
+    max-width: 850px;
+    margin: 40px auto 80px;
+    padding: 45px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(18, 52, 90, 0.08);
+    text-align: left;
+}
+
+.quiz-section > .tagline,
+.quiz-section > h1,
+.quiz-section > p {
+    text-align: center;
+}
+
+.quiz-section > h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.question {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f4f7fb;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+}
+
+.question h2 {
+    color: #12345a;
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+.question label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 15px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #526174;
+    transition: 0.2s ease;
+}
+
+.question label:hover {
+    border-color: #159b8a;
+    background-color: #f0faf8;
+}
+
+.question input[type="radio"] {
+    accent-color: #159b8a;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.quiz-section .button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#quizResult {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f4f7fb;
+    border-radius: 8px;
+    color: #263449;
+}
+
+#quizResult h2 {
+    color: #12345a;
+    margin-bottom: 12px;
+}
+
+#quizResult p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+    .quiz-section {
+        margin: 30px 15px 50px;
+        padding: 25px 18px;
+    }
+
+    .quiz-section > h1 {
+        font-size: 28px;
+    }
+
+    .question {
+        padding: 18px 14px;
+    }
+
+    .question h2 {
+        font-size: 17px;
+    }
+
+    .question label {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+}
+
+
+#quizResult .correct {
+    color: #16834a;
+    font-weight: bold;
+}
+
+#quizResult .incorrect {
+    color: #d93636;
+    font-weight: bold;
+}
