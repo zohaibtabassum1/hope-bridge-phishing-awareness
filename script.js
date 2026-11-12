@@ -1,8 +1,17 @@
 
 const correctAnswers = {
-    q1: "b",
-    q2: "c",
-    q3: "a"
+    q1: {
+        value: "b",
+        text: "A cyberattack used to steal personal information"
+    },
+    q2: {
+        value: "c",
+        text: "Avoid clicking links and verify the sender"
+    },
+    q3: {
+        value: "a",
+        text: "An unexpected message asking for your password"
+    }
 };
 
 const checkButton = document.getElementById("checkAnswers");
@@ -24,15 +33,21 @@ checkButton.addEventListener("click", function () {
             return;
         }
 
-        if (selectedAnswer.value === correctAnswers[question]) {
+        if (selectedAnswer.value === correctAnswers[question].value) {
             score++;
 
             feedback += `
-                <p class="correct">✓ ${question.toUpperCase()}: Correct!</p>
+                <p class="correct">
+                    ✓ ${question.toUpperCase()}: Correct!
+                </p>
             `;
         } else {
             feedback += `
-                <p class="incorrect">✗ ${question.toUpperCase()}: Incorrect.</p>
+                <p class="incorrect">
+                    ✗ ${question.toUpperCase()}: Incorrect.
+                    <br>
+                    Correct answer: ${correctAnswers[question].text}
+                </p>
             `;
         }
     }
