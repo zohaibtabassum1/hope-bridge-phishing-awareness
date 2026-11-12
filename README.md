@@ -41,6 +41,7 @@ hope-bridge-phishing-awareness/
 │
 ├── index.html
 ├── awareness.html
+├── script.js
 ├── style.css
 └── README.md
 ```
