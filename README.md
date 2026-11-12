@@ -52,4 +52,12 @@ This project is part of a cybersecurity awareness initiative focused on helping 
 
 ---
 
+
+## Limitaions
+
+The quiz uses client-side JavaScript to check answers, which means the correct answers can be viewed through browser Developer Tools. This is acceptable for this project because the quiz is designed for phishing awareness and learning, not for a secure examination. No sensitive information or confidential results are involved. A real assessment requiring answer confidentiality should validate answers on a secure server.
+
+---
+
+
 **Developed as part of the Hope Bridge Foundation Phishing Awareness Programme.**
