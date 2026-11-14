@@ -75,6 +75,27 @@ This project is part of a cybersecurity awareness initiative focused on helping 
 
 A real assessment requiring answer confidentiality or sensitive information processing should use a secure backend with appropriate validation and security controls.
 
+## Deployment
+
+This project is deployed using GitHub Pages.
+
+To publish the website:
+1. Open the project repository on GitHub.
+2. Navigate to Settings → Pages.
+3. Under Build and deployment, select Deploy from a branch.
+4. Select the `main` branch and `/ (root)` folder.
+5. Click Save.
+
+GitHub Pages automatically publishes the website when changes are pushed to the selected branch.
+
+Live Website: https://zohaibtabassum1.github.io/hope-bridge-phishing-awareness/
+
+## Demo Video
+
+Watch the project demonstration here:
+
+[Hope Bridge Foundation - Phishing Awareness Demo](https://drive.google.com/file/d/1QQWo_HqXeHYC0HZ4SAv-blRlAAnScSYx/view?usp=sharing)
+
 ---
 
 **Developed as part of the Hope Bridge Foundation Phishing Awareness Programme.**
