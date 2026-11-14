@@ -239,3 +239,239 @@ footer {
     color: #d93636;
     font-weight: bold;
 }
+
+
+/* =================================
+   SIMULATED PHISHING PAGE
+================================= */
+
+.simulated-intro {
+    max-width: 850px;
+    margin: 65px auto 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+.simulated-intro h1 {
+    color: #12345a;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.simulated-intro p {
+    color: #526174;
+    font-size: 16px;
+}
+
+/* EMAIL SECTION */
+
+.email-section {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+}
+
+.email-section h2,
+.report-section h2 {
+    color: #12345a;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* EMAIL CARD */
+
+.email-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(18, 52, 90, 0.07);
+}
+
+.email-details {
+    background-color: #f4f7fb;
+    padding: 18px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #12345a;
+    margin-bottom: 22px;
+}
+
+.email-details p {
+    margin-bottom: 8px;
+    color: #526174;
+}
+
+.email-details p:last-child {
+    margin-bottom: 0;
+}
+
+.email-details strong {
+    color: #12345a;
+}
+
+.email-card hr {
+    border: none;
+    border-top: 1px solid #e1e8f0;
+    margin: 20px 0;
+}
+
+.email-content {
+    color: #263449;
+    line-height: 1.9;
+}
+
+.email-content p {
+    margin-bottom: 16px;
+}
+
+.email-content strong {
+    color: #b45309;
+}
+
+/* TRAINING NOTICE */
+
+.training-notice {
+    margin-top: 25px;
+    padding: 14px 18px;
+    background-color: #eaf5f3;
+    border-left: 4px solid #159b8a;
+    border-radius: 6px;
+    color: #176b61;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* REPORTING SECTION */
+
+.report-section {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(18, 52, 90, 0.07);
+}
+
+.report-section > p {
+    color: #526174;
+    margin-bottom: 25px;
+}
+
+/* FORM INPUTS */
+
+#reportForm label {
+    display: block;
+    color: #12345a;
+    font-weight: bold;
+    margin: 18px 0 8px;
+}
+
+#reportForm input,
+#reportForm textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5deea;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #263449;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+#reportForm input:focus,
+#reportForm textarea:focus {
+    border-color: #159b8a;
+    box-shadow: 0 0 0 3px rgba(21, 155, 138, 0.12);
+}
+
+#reportForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* SUBMIT BUTTON */
+
+#reportForm button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 13px 28px;
+    background-color: #12345a;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#reportForm button:hover {
+    background-color: #159b8a;
+}
+
+#reportForm button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* FORM STATUS MESSAGE */
+
+#formStatus {
+    margin-top: 18px;
+    padding: 0;
+    color: #16834a;
+    font-weight: bold;
+}
+
+#formStatus:empty {
+    display: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .simulated-intro {
+        margin: 35px auto 20px;
+        padding: 20px;
+    }
+
+    .simulated-intro h1 {
+        font-size: 28px;
+    }
+
+    .email-section {
+        padding: 0 15px;
+    }
+
+    .email-section h2,
+    .report-section h2 {
+        font-size: 21px;
+    }
+
+    .email-card {
+        padding: 20px 16px;
+    }
+
+    .email-details {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .email-content {
+        font-size: 14px;
+    }
+
+    .report-section {
+        margin: 0 15px 45px;
+        padding: 25px 18px;
+    }
+
+    #reportForm button {
+        width: 100%;
+    }
+}
