@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulated Phishing | Hope Bridge Foundation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ASSETS/logo.svg" alt="Hope Bridge Foundation logo">
+                <span>Hope Bridge Foundation</span>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="awareness.html">Awareness Materials</a>
+            <a href="simulated.html">Simulated Phishing</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="simulated-intro">
+            <h1>Simulated Phishing Exercise</h1>
+
+            <p>
+                Learn how to recognise suspicious emails by reviewing
+                this fictional phishing email example.
+            </p>
+        </section>
+
+        <!-- Sample Email -->
+        <section class="email-section">
+
+            <h2>Sample Suspicious Email</h2>
+
+            <div class="email-card">
+
+                <div class="email-details">
+                    <p><strong>From:</strong> Hope Bridge Foundation - IT Support</p>
+
+                    <p><strong>To:</strong> Employee</p>
+
+                    <p><strong>Subject:</strong> Action Required: Account Security Review</p>
+                </div>
+
+                <hr>
+
+                <div class="email-content">
+
+                    <p>Dear Team Member,</p>
+
+                    <p>
+                        We are conducting a routine account security review
+                        to help protect our organisation's accounts.
+                    </p>
+
+                    <p>
+                        Please review this notification and consider whether
+                        the message is legitimate before taking any action.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Urgent notice: Your account access may be
+                            interrupted if this request is ignored.
+                        </strong>
+                    </p>
+
+                    <p>Regards,<br>IT Support Team</p>
+
+                </div>
+
+                <div class="training-notice">
+                    Training example only - no real account action is required.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Reporting Form -->
+        <section class="report-section">
+
+            <h2>Report a Suspicious Email</h2>
+
+            <p>
+                Think the email looks suspicious?
+                Use the form below to report it.
+            </p>
+
+            <form id="reportForm"
+                  action="https://formspree.io/f/xppdqbrl"
+                  method="POST">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Why do you think this email is suspicious?</label>
+                <textarea id="reason" name="reason" rows="5" required></textarea>
+
+                <button type="submit">Submit Report</button>
+
+                <p id="formStatus" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hope Bridge Foundation. All rights reserved.</p>
+    </footer>
+
+
+<script>
+    const reportForm = document.getElementById("reportForm");
+    const formStatus = document.getElementById("formStatus");
+
+    reportForm.addEventListener("submit", async function (event) {
+
+        // Prevent the page from refreshing
+        event.preventDefault();
+
+        // Show submitting message
+        formStatus.textContent = "Submitting your report...";
+
+        // Get the form data
+        const formData = new FormData(reportForm);
+
+        try {
+
+            // Send data to Formspree
+            const response = await fetch(reportForm.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+
+                formStatus.textContent = "Thank you! Your report has been submitted successfully.";
+
+                // Clear the form
+                reportForm.reset();
+
+            } else {
+
+                formStatus.textContent = "Sorry, something went wrong. Please try again.";
+
+            }
+
+        } catch (error) {
+
+            formStatus.textContent = "Unable to submit your report. Please check your internet connection.";
+
+        }
+
+    });
+</script>
+
+
+</body>
+</html>
